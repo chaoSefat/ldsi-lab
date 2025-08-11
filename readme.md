@@ -30,3 +30,29 @@ Dataset Details
 - Analysis: Court's analysis of law and facts
 - Issues: Legal issues identified by the court
 - Other: Miscellaneous content not fitting other categories
+
+
+## Technical Approach
+## Sequence-to-Sequence Framework
+Unlike traditional classification approaches, this implementation treats rhetorical role prediction as a text generation task:
+
+- Input: Legal sentence text (tokenized)
+- Processing: T5 encoder-decoder architecture
+- Output: Generated rhetorical role label
+- Advantage: Leverages pre-trained language model's understanding of legal language
+
+## Model Architecture
+
+- Base Model: T5-base (Text-to-Text Transfer Transformer)
+- Task Formulation: Sentence → Rhetorical Role Label generation
+- Preprocessing: Custom spaCy-based tokenization for legal text
+- Post-processing: Label extraction and cleaning
+
+## Features
+
+- Domain-Specific Design: Tailored for Indian legal judgment documents
+- Sentence-Level Classification: Processes individual sentences for fine-grained analysis
+- Custom Legal Text Preprocessing: Handles legal document peculiarities
+- Comprehensive Evaluation: Multi-metric assessment (weighted, macro, micro F1-scores)
+- Modular Architecture: Clean separation of data handling, model operations, and training
+- Flexible Configuration: Adjustable hyperparameters and model checkpoints
