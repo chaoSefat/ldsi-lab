@@ -8,7 +8,8 @@ This module implements a sequence-to-sequence approach for automatic rhetorical 
 
 ## Rhetorical Roles in Legal Documents
 Legal judgment documents can be segmented into topically coherent semantic units called Rhetorical Roles (RRs). These roles help structure legal documents for better organization, search, and automated processing.
-Dataset Details
+
+## Dataset Details
 
 - Source: Indian Supreme Court judgment documents in English
 - Corpus Size: 354 legal documents with 40,305 annotated sentences
@@ -16,7 +17,7 @@ Dataset Details
 - Granularity: Sentence-level annotations
 - Origin: Part of the BUILDNyAI project for legal NLP corpus development
 
-## The 12 Rhetorical Role Categories:
+* The 12 Rhetorical Role Categories:
 
 - Preamble: Document header and case identification
 - Facts: Statement of facts and case background
