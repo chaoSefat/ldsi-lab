@@ -11,13 +11,28 @@ Legal judgment documents can be segmented into topically coherent semantic units
 
 ## Dataset Details
 
+### Corpus for Automatic Structuring of Legal Documents
+Prathamesh Kalamkar1,2,∗
+, Aman Tiwari1,2,∗
+, Astha Agarwal1,2,∗
+, Saurabh Karn3,∗
+,
+Smita Gupta3
+, Vivek Raghavan1
+, Ashutosh Modi4
+1EkStep Foundation, 2Thoughtworks Technologies India Pvt Ltd.,
+3Agami , 4
+Indian Institute of Technology Kanpur (IIT-K)
+{prathamk, aman.tiwari, astha.agarwal}@thoughtworks.com,
+{saurabh, smita}@agami.in, vivek@ekstep.org, ashutoshm@cse.iitk.ac.in
+
 - Source: Indian Supreme Court judgment documents in English
 - Corpus Size: 354 legal documents with 40,305 annotated sentences
 - Annotation: 12 different rhetorical role categories
 - Granularity: Sentence-level annotations
 - Origin: Part of the BUILDNyAI project for legal NLP corpus development
 
-* The 12 Rhetorical Role Categories:
+### The 12 Rhetorical Role Categories:
 
 - Preamble: Document header and case identification
 - Facts: Statement of facts and case background
