@@ -48,14 +48,14 @@ Unlike traditional classification approaches, this implementation treats rhetori
 - Preprocessing: Custom spaCy-based tokenization for legal text
 - Post-processing: Label extraction and cleaning
 
-## Features
+<!-- ## Features
 
 - Domain-Specific Design: Tailored for Indian legal judgment documents
 - Sentence-Level Classification: Processes individual sentences for fine-grained analysis
 - Custom Legal Text Preprocessing: Handles legal document peculiarities
 - Comprehensive Evaluation: Multi-metric assessment (weighted, macro, micro F1-scores)
 - Modular Architecture: Clean separation of data handling, model operations, and training
-- Flexible Configuration: Adjustable hyperparameters and model checkpoints
+- Flexible Configuration: Adjustable hyperparameters and model checkpoints -->
 
 ## Results \& Findings:
 ### Model Performance
