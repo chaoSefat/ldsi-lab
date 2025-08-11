@@ -12,14 +12,11 @@ Legal judgment documents can be segmented into topically coherent semantic units
 ## Dataset Details
 
 ### Corpus for Automatic Structuring of Legal Documents
-Prathamesh Kalamkar1,2,∗
+Prathamesh Kalamkar1,2,∗ 
 , Aman Tiwari1,2,∗
 , Astha Agarwal1,2,∗
-, Saurabh Karn3,∗
-,
-Smita Gupta3
-, Vivek Raghavan1
-, Ashutosh Modi4
+, Saurabh Karn3,∗,Smita Gupta3, Vivek Raghavan1, Ashutosh Modi4
+<br />
 1EkStep Foundation, 2Thoughtworks Technologies India Pvt Ltd.,
 3Agami , 4
 Indian Institute of Technology Kanpur (IIT-K)
