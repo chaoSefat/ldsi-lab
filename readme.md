@@ -12,7 +12,7 @@ This module implements a sequence-to-sequence approach for automatic rhetorical 
 
 For this Praktikum, multiple methods were systematically evaluated and tested:
 
-- **Sequential T5 Transformers**: The primary focus of this repository, implementing fine-tuned T5 models for rhetorical role prediction
+- **Sequential T5 Transformers**: The primary focus of this repository, implementation of T5 model fine tuning for rhetorical role prediction
 - **BiLSTM-CRF**: Implemented using the approach from https://github.com/Law-AI/semantic-segmentation
 - **BERT-HSLN**: Implemented based on the methodology from https://github.com/Legal-NLP-EkStep/rhetorical-role-baseline
 
@@ -21,7 +21,7 @@ This repository specifically focuses on the T5 fine-tuning approach, while compr
 ## Rhetorical Roles in Legal Documents
 Legal judgment documents can be segmented into topically coherent semantic units called Rhetorical Roles (RRs). These roles help structure legal documents for better organization, search, and automated processing.
 
-## Dataset Details
+## Primary Dataset Details
 
 ### Corpus for Automatic Structuring of Legal Documents
 Prathamesh Kalamkar1,2,∗ 
@@ -95,6 +95,7 @@ https://arxiv.org/abs/2201.13125
 - Macro F1: 0.219
 - Weighted F1: 0.448
 
+Afterwards we tested our approaches on a secondary dataset by Bhattacharya et al.
 ### Bhattacharya et al. Dataset:
 <br />
 http://arxiv.org/abs/1911.05405
