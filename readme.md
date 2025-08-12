@@ -75,6 +75,8 @@ Unlike traditional classification approaches, this implementation treats rhetori
 We evaluated the T5 sequence-to-sequence model on multiple datasets to assess its effectiveness for rhetorical role classification in legal documents. The model was trained with limited computational resources (Google Colab) with linmited training time on free plan, constraining the number of training epochs.
 ### Performance on Legal Datasets
 ### Kalamkar et al. Dataset:
+<br />
+https://arxiv.org/abs/2201.13125
 
 - Training Duration: 5 epochs
 - Accuracy: 0.503
@@ -82,6 +84,8 @@ We evaluated the T5 sequence-to-sequence model on multiple datasets to assess it
 - Weighted F1: 0.448
 
 ### Bhattacharya et al. Dataset:
+<br />
+http://arxiv.org/abs/1911.05405
 
 - Training Duration: 6 epochs
 - Accuracy: 0.363
@@ -103,10 +107,10 @@ The superior performance on PubMed20k RCT (49% improvement in accuracy over Kala
 
 ### Limitations and Constraints
 The experimental results should be interpreted with the following limitations in mind:
-
-1. Limited Training Epochs: Due to computational resource constraints, models were trained for only 5-6 epochs, which may be insufficient for full convergence.
-2. Hyperparameter Optimization: The scope of hyperparameter tuning was restricted due to high computational requirements and limited compute provisioning.
-3. Early Stopping: Training was terminated early due to resource usage limits, potentially preventing the models from reaching optimal performance.
+1. Due to compute resource constraints T5-small was used which has much lower trainable parameters compared to larger models which hindered achieving high accuracy. 
+2. Limited Training Epochs: Due to computational resource constraints, models were trained for only 5-6 epochs, which may be insufficient for full convergence.
+3. Hyperparameter Optimization: The scope of hyperparameter tuning was restricted due to high computational requirements and limited compute provisioning.
+4. Early Stopping: Training was terminated early due to resource usage limits, potentially preventing the models from reaching optimal performance.
 
 ### Key Findings:
 
