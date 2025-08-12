@@ -4,7 +4,9 @@
 This implementation was developed as part of the **Legal Data Science Lab (LDSI_LAB)** at **Technical University of Munich (TUM)** for the Master's in Informatics program (SS22). The work explores innovative approaches to legal NLP by applying sequence-to-sequence models to the structured analysis of Indian legal judgment documents, contributing to the broader effort of automating legal document processing in populous judicial systems.
 
 ## Overview
-This module implements a sequence-to-sequence approach for automatic rhetorical role classification in Indian legal judgment documents. The system uses transformer models (T5-base) to predict rhetorical roles for individual sentences in legal documents, treating the classification task as a text generation problem where the model learns to generate appropriate rhetorical role labels given input legal text segments.
+This module implements a sequence-to-sequence approach for automatic rhetorical role classification in Indian legal judgment documents. The system uses transformer models (T5-small) to predict rhetorical roles for individual sentences in legal documents, treating the classification task as a text generation problem where the model learns to generate appropriate rhetorical role labels given input legal text segments.
+
+For this Praktikum, various methods were tried and tested including Sequential T5 Transformers, BiLSTM-CRF and BERT-HSLN. For BiLSTM-CRF approach the implementation of https://github.com/Law-AI/semantic-segmentation was used. BERT-HSLN implementation of https://github.com/Legal-NLP-EkStep/rhetorical-role-baseline was used. This repo focuses on finetuning using T5. Complete results of all methods are in the project report manuscript.
 
 ## Rhetorical Roles in Legal Documents
 Legal judgment documents can be segmented into topically coherent semantic units called Rhetorical Roles (RRs). These roles help structure legal documents for better organization, search, and automated processing.
@@ -56,7 +58,7 @@ Unlike traditional classification approaches, this implementation treats rhetori
 
 ## Model Architecture
 
-- Base Model: T5-base (Text-to-Text Transfer Transformer)
+- Base Model: T5-small (Text-to-Text Transfer Transformer)
 - Task Formulation: Sentence → Rhetorical Role Label generation
 - Preprocessing: Custom spaCy-based tokenization for legal text
 - Post-processing: Label extraction and cleaning
@@ -116,4 +118,4 @@ The experimental results should be interpreted with the following limitations in
 
 - Dataset Size Dependency: The T5 sequence-to-sequence approach shows strong sensitivity to training data size, with performance scaling significantly with larger datasets.
 - Legal Domain Challenges: Performance on legal datasets (Kalamkar and Bhattacharya) was notably lower than on biomedical abstracts (PubMed20k), suggesting domain-specific challenges in legal text processing.
-- Resource Requirements: The high computational demands of T5-based sequence-to-sequence models present practical constraints for legal NLP applications with limited resources.
+- Resource Requirements: The high computational demands of T5-small based sequence-to-sequence models present practical constraints for legal NLP applications with limited resources.
