@@ -1,12 +1,22 @@
 # Legal Rhetorical Role Classification using Sequence-to-Sequence Models
 
 ## Context
+
 This implementation was developed as part of the **Legal Data Science Lab (LDSI_LAB)** at **Technical University of Munich (TUM)** for the Master's in Informatics program (SS22). The work explores innovative approaches to legal NLP by applying sequence-to-sequence models to the structured analysis of Indian legal judgment documents, contributing to the broader effort of automating legal document processing in populous judicial systems.
 
 ## Overview
-This module implements a sequence-to-sequence approach for automatic rhetorical role classification in Indian legal judgment documents. The system uses transformer models (T5-small) to predict rhetorical roles for individual sentences in legal documents, treating the classification task as a text generation problem where the model learns to generate appropriate rhetorical role labels given input legal text segments.
 
-For this Praktikum, various methods were tried and tested including Sequential T5 Transformers, BiLSTM-CRF and BERT-HSLN. For BiLSTM-CRF approach the implementation of https://github.com/Law-AI/semantic-segmentation was used. BERT-HSLN implementation of https://github.com/Legal-NLP-EkStep/rhetorical-role-baseline was used. This repo focuses on finetuning using T5. Complete results of all methods are in the project report manuscript.
+This module implements a sequence-to-sequence approach for automatic rhetorical role classification in Indian legal judgment documents. The system uses transformer models (specifically T5-small, a sequence-to-sequence transformer) to predict rhetorical roles for individual sentences in legal documents. The approach treats the classification task as a text generation problem, where the model learns to generate appropriate rhetorical role labels given input legal text segments.
+
+## Methodology and Implementation
+
+For this Praktikum, multiple methods were systematically evaluated and tested:
+
+- **Sequential T5 Transformers**: The primary focus of this repository, implementing fine-tuned T5 models for rhetorical role prediction
+- **BiLSTM-CRF**: Implemented using the approach from https://github.com/Law-AI/semantic-segmentation
+- **BERT-HSLN**: Implemented based on the methodology from https://github.com/Legal-NLP-EkStep/rhetorical-role-baseline
+
+This repository specifically focuses on the T5 fine-tuning approach, while comprehensive results comparing all methods are available in the project report manuscript (PDF) included in the repo.
 
 ## Rhetorical Roles in Legal Documents
 Legal judgment documents can be segmented into topically coherent semantic units called Rhetorical Roles (RRs). These roles help structure legal documents for better organization, search, and automated processing.
