@@ -16,7 +16,7 @@ For this Praktikum, multiple methods were systematically evaluated and tested:
 - **BiLSTM-CRF**: Implemented using the approach from https://github.com/Law-AI/semantic-segmentation
 - **BERT-HSLN**: Implemented based on the methodology from https://github.com/Legal-NLP-EkStep/rhetorical-role-baseline
 
-This repository specifically focuses on the T5 fine-tuning approach, while comprehensive results comparing all methods are available in the project report manuscript (PDF) included in the repo.
+This repository specifically focuses on the T5 fine-tuning approach, while comprehensive results comparing all methods are available in the [project report manuscript (PDF)](https://github.com/chaoSefat/ldsi-lab/blob/main/Legal_Data_Analysis_Lab_Sefat_and_Chowdhury.pdf) included in the repo.
 
 ## Rhetorical Roles in Legal Documents
 Legal judgment documents can be segmented into topically coherent semantic units called Rhetorical Roles (RRs). These roles help structure legal documents for better organization, search, and automated processing.
